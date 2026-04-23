@@ -1,0 +1,161 @@
+:root {
+  --primary: #4a2d78;
+  --secondary: #c19ee4;
+  --secondary-hover: #6f4ca8;
+  --pink: #ff00f2;
+}
+
+/* push footer to bottom of page */
+body {
+  min-block-size: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: linear-gradient(
+    to left bottom,
+    #150135,
+    #180537,
+    #1b0838,
+    #1e0b3a,
+    #220d3c,
+    #240d3c,
+    #260e3c,
+    #280e3c,
+    #280c39,
+    #290a37,
+    #290834,
+    #290632
+  );
+}
+
+/* .bg-img {
+  min-height: 90vh;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+ background-color: rgba(0, 0, 0, 0.467);
+} */
+
+/* .bg-img.dashboard {
+  min-height: auto;
+} */
+
+nav,
+footer {
+  /* background-color: var(--primary); */
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: var(--secondary);
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: var(--secondary);
+}
+
+.nav-link.active {
+  color: var(--secondary) !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border-color: transparent;
+}
+
+.btn.edit:hover {
+  background-color: #1c0e34;
+}
+.btn.done:hover {
+  background-color: #289973;
+}
+
+.btn-close.delete {
+  --bs-btn-close-bg: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 0.2lh 1.2ch;
+  width: auto;
+  height: auto;
+  color: #4e0b0b;
+  background-color: #f7e7e7 !important;
+  transition: all 0.2s;
+}
+
+.btn-close.delete:hover {
+  color: #ecb4b4;
+  background-color: #c91c1c !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-hover);
+  color: white;
+  border-color: transparent;
+}
+
+#completedList .card {
+  background-color: rgb(221, 249, 217);
+  border: 1px solid #289973;
+}
+
+form a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+form a:hover {
+  color: var(--secondary);
+}
+
+.bg-translucent {
+  background-color: #00000063;
+}
+
+#sortSelect:hover {
+  cursor: pointer;
+}
+
+.pinkBorder {
+  border: var(--pink) 1px solid;
+}
+
+textarea {
+  resize: none;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+.btn-outline-primary {
+  border-color: var(--primary) !important;
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary) !important;
+}
